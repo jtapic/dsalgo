@@ -6,12 +6,11 @@ namespace DSAlgorithms
     {
         static void Main(string[] args )
         {
-
-            LinearSearch s = new LinearSearch();
-            int[] A = {84,21,47,96,15};
-            int found = s.Search(A,A.Length,100);
-
-            Console.WriteLine("Result: "+found);
+            //Linear Search
+            //LinearSearch s = new LinearSearch();
+            //int[] A = {84,21,47,96,15};
+            //int found = s.Search(A,A.Length,100);
+            //Console.WriteLine("Result: "+found);
 
             //Factorial
             //Factorial f = new Factorial();
