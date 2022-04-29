@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace DSAlgorithms
 {
@@ -9,9 +6,14 @@ namespace DSAlgorithms
     {
         static void Main(string[] args)
         {
-            Recursion r = new Recursion();
+           // Recursion r = new Recursion();
             // r.calculate(5);
-            r.CalculateRecursion(4);
+            //  r.CalculateRecursion(4);
+
+            SumOfN s = new SumOfN();
+            int sum = s.SumN(5);
+            Console.WriteLine(sum);
+            
         } 
     }
 }
