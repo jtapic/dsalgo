@@ -10,7 +10,8 @@ namespace DSAlgorithms
         static void Main(string[] args)
         {
             Recursion r = new Recursion();
-            r.calculate(5);
-        }
+            // r.calculate(5);
+            r.CalculateRecursion(4);
+        } 
     }
 }

@@ -4,9 +4,15 @@ namespace DSAlgorithms
 {
     class Recursion
     {
-        public void CalRecursion(int n)
+        public void CalculateRecursion(int n)
         {
+            if (n>0)
+            {
+                int k = n * n;
+                Console.WriteLine(k);
+                CalculateRecursion(n-1);
 
+            }
         }
         public void calculate(int n)
 
