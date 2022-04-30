@@ -2,10 +2,16 @@
 
 namespace DSAlgorithms
 {
+
     partial class Program
     {
         static void Main(string[] args )
         {
+            //Binary Search
+            BinarySearch b = new BinarySearch();
+            int[] A = {15,21,47,84,96};
+            Console.WriteLine("Result:"+ b.BSearchIterative(A,A.Length,96) );
+
             //Linear Search
             //LinearSearch s = new LinearSearch();
             //int[] A = {84,21,47,96,15};
