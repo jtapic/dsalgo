@@ -2,6 +2,22 @@
 {
     public class BinarySearch
     {
+        public int BSearchRecursion(int[] A, int key, int l, int r)
+        {
+            if (l>r)
+                return -1;
+            else
+            {
+                int mid = (l+r)/2;
+                if (key == A[mid])
+                    return mid;
+                else if (key < A[mid])
+                    return BSearchRecursion(A,key,l,mid-1);
+                else if (key > A[mid])
+                    return BSearchRecursion(A,key,mid+1,r);
+            }
+            return -1;
+        }
         public int BSearchIterative(int[] A, int n, int key)
         {
             int l = 0;

@@ -11,6 +11,7 @@ namespace DSAlgorithms
             BinarySearch b = new BinarySearch();
             int[] A = {15,21,47,84,96};
             Console.WriteLine("Result:"+ b.BSearchIterative(A,A.Length,96) );
+            Console.WriteLine("Result:"+ b.BSearchRecursion(A,96,0,A.Length-1) );
 
             //Linear Search
             //LinearSearch s = new LinearSearch();
