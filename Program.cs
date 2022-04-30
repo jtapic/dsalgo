@@ -2,16 +2,27 @@
 
 namespace DSAlgorithms
 {
-
     partial class Program
     {
         static void Main(string[] args )
         {
+            //Sorting
+            //Selection Sort
+            var s = new Sorting();
+            int[] A = {3,5,8,9,6,2};
+            Console.WriteLine("Original Array:");
+            s.Display(A);
+            s.SelectionSort(A);
+            Console.WriteLine("Sorted Array:");
+            s.Display(A);
+
+
+
             //Binary Search
-            BinarySearch b = new BinarySearch();
-            int[] A = {15,21,47,84,96};
-            Console.WriteLine("Result:"+ b.BSearchIterative(A,A.Length,96) );
-            Console.WriteLine("Result:"+ b.BSearchRecursion(A,96,0,A.Length-1) );
+            //BinarySearch b = new BinarySearch();
+            //int[] A = {15,21,47,84,96};
+            //Console.WriteLine("Result:"+ b.BSearchIterative(A,96));
+            //Console.WriteLine("Result:"+ b.BSearchRecursion(A,96,0,A.Length-1) );
 
             //Linear Search
             //LinearSearch s = new LinearSearch();

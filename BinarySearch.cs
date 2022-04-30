@@ -18,10 +18,10 @@
             }
             return -1;
         }
-        public int BSearchIterative(int[] A, int n, int key)
+        public int BSearchIterative(int[] A, int key)
         {
             int l = 0;
-            int r = n - 1;
+            int r = A.Length - 1;
             while (l<=r)
             {
                 int mid = (l+r)/2;
