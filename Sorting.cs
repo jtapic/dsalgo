@@ -11,6 +11,25 @@ namespace DSAlgorithms
             }
             Console.WriteLine();
         }
+
+        public void InsertionSort(int [] A)
+        {
+            for (int i = 1; i<A.Length;i++)
+            {
+                int temp = A[i];
+                int position = i;
+                while (position > 0 && A[position-1] > temp)
+                {
+                    A[position] = A[position-1];
+                    position = position - 1;
+                }
+                A[position] = temp;
+            }
+
+        }
+
+ 
+
         public void SelectionSort(int[] A)
         {
             for (int i = 0; i < A.Length -1;i++)
@@ -27,10 +46,7 @@ namespace DSAlgorithms
             }
         } 
 
-        public void InsertionSort()
-        {
-
-        }
+       
 
         public void BubbleSort()
         {

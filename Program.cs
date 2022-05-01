@@ -7,12 +7,12 @@ namespace DSAlgorithms
         static void Main(string[] args )
         {
             //Sorting
-            //Selection Sort
             var s = new Sorting();
             int[] A = {3,5,8,9,6,2};
-            Console.WriteLine("Original Array:");
+            Console.WriteLine("Original Array:");  
             s.Display(A);
-            s.SelectionSort(A);
+            //s.SelectionSort(A);
+            s.InsertionSort(A);
             Console.WriteLine("Sorted Array:");
             s.Display(A);
 
