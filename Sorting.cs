@@ -12,6 +12,50 @@ namespace DSAlgorithms
             Console.WriteLine();
         }
 
+        public void ShellSort(int[] A)
+        {
+            int n = A.Length;
+            int gap = n/2;
+            while (gap > 0)
+            {
+                int i = gap;
+                while (i < n)
+                {
+                    int temp = A[i];
+                    int j = i-gap;
+                    while (j >= 0 && A[j] > temp)
+                    {
+                        A[j+gap] = A[j];
+                        j = j-gap;
+                    }
+                    A[j+gap] = temp;
+                    i = i+1;
+                }
+                gap = gap/2;
+            }
+
+
+        }
+        public void ShellSort2(int[] A)
+        {
+            int n = A.Length;
+            for (int gap = n/2; gap > 0; gap = gap/2)
+            {
+                for (int i = gap ; i < n; i++)
+                {
+                    int gvalue = A[i];
+                    int j = i-gap;
+                    while (j >= 0 && A[j] > gvalue)
+                    {
+                        A[j+gap] = A[j];
+                        j = j-gap;
+                    }
+                    A[j+gap] = gvalue;
+                }
+            }
+        }
+
+
         public void BubbleSort(int[] A)
         {
             for (int pass = A.Length-1; pass >= 0; pass--)
