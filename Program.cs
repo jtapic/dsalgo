@@ -16,7 +16,8 @@ namespace DSAlgorithms
             //s.BubbleSort(A);
             //s.ShellSort(A);
             //s.ShellSort2(A);
-            s.MergeSort(A,0,A.Length-1);
+            // s.MergeSort(A,0,A.Length-1);
+            s.QuickSort(A,0,A.Length-1);
             Console.WriteLine("Sorted Array:");
             s.Display(A);
 
