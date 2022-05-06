@@ -40,6 +40,22 @@ namespace DSAlgorithms
             size += 1;
         }
 
+        public void AddFirst(int e)
+        {
+            Node newest = new Node(e,null);
+            if (IsEmpty())
+            {
+                head = newest;
+                tail = newest;
+            }
+            else
+            {
+                newest.next = head;
+                head = newest;
+            }
+            size += 1;
+        }
+
         public void DisplayLinkedList()
         {
             Node p = head;

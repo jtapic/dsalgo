@@ -17,6 +17,12 @@ namespace DSAlgorithms
             l.AddLast(3);
             l.DisplayLinkedList();
             Console.WriteLine("Size"+l.length());
+            l.AddFirst(15);
+            l.DisplayLinkedList();
+            Console.WriteLine("Size"+l.length());
+            l.AddFirst(25);
+            l.DisplayLinkedList();
+            Console.WriteLine("Size"+l.length());
 
             //Sorting
             //var s = new Sorting();
