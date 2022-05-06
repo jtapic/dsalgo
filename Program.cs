@@ -6,22 +6,24 @@ namespace DSAlgorithms
     {
         static void Main(string[] args )
         {
+            // Singly Linked List
+
+
+
             //Sorting
-            var s = new Sorting();
-            int[] A = {3,5,8,9,6,2};
-            Console.WriteLine("Original Array:");  
-            s.Display(A);
+            //var s = new Sorting();
+            //int[] A = {3,5,8,9,6,2};
+            //Console.WriteLine("Original Array:");  
+            //s.Display(A);
             //s.SelectionSort(A);
             //s.InsertionSort(A);
             //s.BubbleSort(A);
             //s.ShellSort(A);
             //s.ShellSort2(A);
             // s.MergeSort(A,0,A.Length-1);
-            s.QuickSort(A,0,A.Length-1);
-            Console.WriteLine("Sorted Array:");
-            s.Display(A);
-
-
+            //s.QuickSort(A,0,A.Length-1);
+            //Console.WriteLine("Sorted Array:");
+            //s.Display(A);
 
             //Binary Search
             //BinarySearch b = new BinarySearch();
