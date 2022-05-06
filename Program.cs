@@ -7,8 +7,16 @@ namespace DSAlgorithms
         static void Main(string[] args )
         {
             // Singly Linked List
-
-
+            LinkedLists l = new LinkedLists();
+            l.AddLast(7);
+            l.AddLast(4);
+            l.AddLast(12);
+            l.DisplayLinkedList();
+            Console.WriteLine("Size "+l.length());
+            l.AddLast(8);
+            l.AddLast(3);
+            l.DisplayLinkedList();
+            Console.WriteLine("Size"+l.length());
 
             //Sorting
             //var s = new Sorting();
