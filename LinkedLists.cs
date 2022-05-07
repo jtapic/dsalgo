@@ -76,6 +76,26 @@ namespace DSAlgorithms
             size = size + 1;
         }
 
+        public int removeFirst()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("List is Empty");
+                return -1;
+            }
+            else
+            {
+                int e = head.element;
+                head = head.next;
+                size = size - 1;
+                if (IsEmpty())
+                {
+                    tail = null;
+                }
+                return e;
+            }
+        }
+
         public void DisplayLinkedList()
         {
             Node p = head;

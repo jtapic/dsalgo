@@ -26,6 +26,10 @@ namespace DSAlgorithms
             l.AddAny(20,3);
             l.DisplayLinkedList();
             Console.WriteLine("Size: "+l.length());
+            int element = l.removeFirst();
+            Console.WriteLine("Removed Element: " + element);
+            l.DisplayLinkedList();
+            Console.WriteLine("Size: "+l.length());
 
             //Sorting
             //var s = new Sorting();

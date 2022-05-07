@@ -4,8 +4,8 @@ namespace DSAlgorithms
 {
     public class Node
     {
-        public int element;
-        public Node next;
+        public int element {get;set;}
+        public Node next {get;set;}
         public Node(int e, Node n)
         {
             element = e;
