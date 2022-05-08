@@ -38,6 +38,9 @@ namespace DSAlgorithms
             Console.WriteLine("Removed Element: " + element);
             l.DisplayLinkedList();
             Console.WriteLine("Size: "+l.length());
+            int position = l.search(12);
+            Console.WriteLine("Result: " + position);
+            Console.WriteLine("Size: "+l.length());
 
             //Sorting
             //var s = new Sorting();

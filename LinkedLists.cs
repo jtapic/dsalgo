@@ -138,6 +138,21 @@ namespace DSAlgorithms
             return e;
         }
 
+        public int search(int key)
+        {
+            Node p = head;
+            int index = 0;
+            while (p != null)
+            {
+                if (p.element == key)
+                    return index;
+                p = p.next;
+                index = index + 1;
+            }
+            return -1;
+
+        }
+
         public void DisplayLinkedList()
         {
             Node p = head;
