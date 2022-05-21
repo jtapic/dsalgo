@@ -153,6 +153,36 @@ namespace DSAlgorithms
 
         }
 
+        public void insertSorted(int e)
+        {
+            Node newest = new Node(e,null);
+            if (IsEmpty())
+            {
+                head = newest;
+            }
+            else
+            {
+                Node p = head;
+                Node q = head;
+                while (p != null && p.element < e)
+                {
+                    q = p;
+                    p = p.next;
+                }
+                if (p == head)
+                {
+                    newest.next = head;
+                    head = newest;
+                }
+                else
+                {
+                    newest.next = q.next;
+                    q.next  = newest;
+                }
+            }
+            size = size + 1;
+        }
+
         public void DisplayLinkedList()
         {
             Node p = head;

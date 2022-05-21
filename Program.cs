@@ -8,39 +8,49 @@ namespace DSAlgorithms
         {
             // Singly Linked List
             LinkedLists l = new LinkedLists();
-            l.AddLast(7);
-            l.AddLast(4);
-            l.AddLast(12);
+            //l.AddLast(7);
+            //l.AddLast(4);
+            //l.AddLast(12);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //l.AddLast(8);
+            //l.AddLast(3);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //l.AddFirst(15);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //l.AddFirst(25);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //l.AddAny(20,3);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //int element = l.removeFirst();
+            //Console.WriteLine("Removed Element: " + element);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //element = l.removeLast();
+            //Console.WriteLine("Removed Element: " + element);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //element = l.removeAny(3);
+            //Console.WriteLine("Removed Element: " + element);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: "+l.length());
+            //int position = l.search(12);
+            //Console.WriteLine("Result: " + position);
+            //Console.WriteLine("Size: "+l.length());
+
+            l.insertSorted(7);
+            l.insertSorted(4);
+            l.insertSorted(12);
+            l.insertSorted(8);
+            l.insertSorted(3);
             l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            l.AddLast(8);
-            l.AddLast(3);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            l.AddFirst(15);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            l.AddFirst(25);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            l.AddAny(20,3);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            int element = l.removeFirst();
-            Console.WriteLine("Removed Element: " + element);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            element = l.removeLast();
-            Console.WriteLine("Removed Element: " + element);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            element = l.removeAny(3);
-            Console.WriteLine("Removed Element: " + element);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: "+l.length());
-            int position = l.search(12);
-            Console.WriteLine("Result: " + position);
-            Console.WriteLine("Size: "+l.length());
+            Console.WriteLine("Size: " + l.length());
+
+
 
             //Sorting
             //var s = new Sorting();
@@ -88,8 +98,8 @@ namespace DSAlgorithms
             // r.calculate(5);
             //  r.CalculateRecursion(4);
 
-            
-            
-        } 
+
+
+        }
     }
 }
