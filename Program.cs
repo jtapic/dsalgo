@@ -6,8 +6,13 @@ namespace DSAlgorithms
     {
         static void Main(string[] args )
         {
+            //Circular Linked List
+
+
+
+
             // Singly Linked List
-            LinkedLists l = new LinkedLists();
+            //LinkedLists l = new LinkedLists();
             //l.AddLast(7);
             //l.AddLast(4);
             //l.AddLast(12);
@@ -41,14 +46,13 @@ namespace DSAlgorithms
             //int position = l.search(12);
             //Console.WriteLine("Result: " + position);
             //Console.WriteLine("Size: "+l.length());
-
-            l.insertSorted(7);
-            l.insertSorted(4);
-            l.insertSorted(12);
-            l.insertSorted(8);
-            l.insertSorted(3);
-            l.DisplayLinkedList();
-            Console.WriteLine("Size: " + l.length());
+            //l.insertSorted(7);
+            //l.insertSorted(4);
+            //l.insertSorted(12);
+            //l.insertSorted(8);
+            //l.insertSorted(3);
+            //l.DisplayLinkedList();
+            //Console.WriteLine("Size: " + l.length());
 
 
 

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinarySearch.cs" />
+    <Compile Include="DlinkedLists.cs" />
     <Compile Include="Factorial.cs" />
     <Compile Include="LinearSearch.cs" />
     <Compile Include="LinkedLists.cs" />
