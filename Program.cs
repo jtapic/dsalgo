@@ -24,6 +24,19 @@ namespace DSAlgorithms
             cl.CirAddFirst(35);
             cl.DisplayCirLinkedLists();
             Console.WriteLine("Size: "+cl.length());
+            cl.CirAddAny(20,3);
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Size: "+cl.length());
+            cl.CirAddAny(30,5);
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Size: "+cl.length());
+            int element = cl.CirRemoveFirst();
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Removed Element "+ element);
+            Console.WriteLine("Size: "+cl.length());
+
+
+
 
             // Singly Linked List
             //LinkedLists l = new LinkedLists();

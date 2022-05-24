@@ -60,6 +60,46 @@ namespace DSAlgorithms
             size +=1;
         }
 
+        public void CirAddAny(int e, int position)
+        {
+            if (position <= 0 || position >= size)
+            {
+                Console.WriteLine("Invalid Position");
+                return;
+            }
+            Node newest = new Node(e,null);
+            Node p = head;
+            int i = 1;
+            while (i < position -1)
+            {
+                p = p.next;
+                i += 1;
+            }
+            newest.next = p.next;
+            p.next = newest;
+            size +=1;
+        }
+
+        public int CirRemoveFirst()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("Circular List is Empty");
+                return -1;
+            }
+            int e = head.element;
+            tail.next = head.next;
+            head = head.next;
+            size = size -1 ;
+            if (IsEmpty())
+            {
+                head = null;
+                tail = null;
+            }
+            return e;
+
+        }
+
         public void DisplayCirLinkedLists()
         {
             Node p = head;
