@@ -100,6 +100,30 @@ namespace DSAlgorithms
 
         }
 
+        public int CirRemoveLast()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("Circular List is Empty");
+                return -1;
+            }
+            Node p = head;
+            int i = 1;
+            while (i < length() - 1)
+            {
+                p = p.next;
+                i += 1;
+            }
+            tail = p;
+            p = p.next;
+            tail.next = head;
+            int e = p.element;
+            size = size - 1;
+            return e;
+
+        }
+
+
         public void DisplayCirLinkedLists()
         {
             Node p = head;

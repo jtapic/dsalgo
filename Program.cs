@@ -34,7 +34,10 @@ namespace DSAlgorithms
             cl.DisplayCirLinkedLists();
             Console.WriteLine("Removed Element "+ element);
             Console.WriteLine("Size: "+cl.length());
-
+            element = cl.CirRemoveLast();
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Removed Element "+ element);
+            Console.WriteLine("Size: "+cl.length());
 
 
 
