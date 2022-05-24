@@ -18,7 +18,12 @@ namespace DSAlgorithms
             cl.CirAddLast(3);
             cl.DisplayCirLinkedLists();
             Console.WriteLine("Size: "+cl.length());
-
+            cl.CirAddFirst(25);
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Size: "+cl.length());
+            cl.CirAddFirst(35);
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Size: "+cl.length());
 
             // Singly Linked List
             //LinkedLists l = new LinkedLists();

@@ -42,6 +42,24 @@ namespace DSAlgorithms
             size += 1;
         }
 
+        public void CirAddFirst(int e)
+        {
+            Node newest = new Node(e,null);
+            if (IsEmpty())
+            {
+                newest.next = newest;
+                head = newest;
+                tail = newest;
+            }
+            else
+            {
+                tail.next = newest;
+                newest.next = head;
+                head = newest;
+            }
+            size +=1;
+        }
+
         public void DisplayCirLinkedLists()
         {
             Node p = head;
