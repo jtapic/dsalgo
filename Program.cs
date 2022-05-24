@@ -7,8 +7,17 @@ namespace DSAlgorithms
         static void Main(string[] args )
         {
             //Circular Linked List
-
-
+            
+            CirLinkedLists cl = new CirLinkedLists();
+            cl.CirAddLast(7);
+            cl.CirAddLast(4);
+            cl.CirAddLast(12);
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Size: "+cl.length());
+            cl.CirAddLast(8);
+            cl.CirAddLast(3);
+            cl.DisplayCirLinkedLists();
+            Console.WriteLine("Size: "+cl.length());
 
 
             // Singly Linked List
