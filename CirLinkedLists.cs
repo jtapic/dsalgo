@@ -122,6 +122,26 @@ namespace DSAlgorithms
             return e;
 
         }
+        public int CirRemoveAny(int position)
+        {
+            if(position < 0 || position >= size - 1)
+            {
+                Console.WriteLine("Invalid Position");
+                return -1;
+            }
+            Node p = head;
+            int i = 1;
+            while (i < position -1)
+            {
+                p = p.next;
+                i = i + 1;
+            }
+            int e = p.next.element;
+            p.next = p.next.next;
+            size = size - 1;
+            return e;
+
+        }
 
 
         public void DisplayCirLinkedLists()
